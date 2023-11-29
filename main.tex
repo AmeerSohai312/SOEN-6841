@@ -1,0 +1,252 @@
+\documentclass[12pt]{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+\usepackage{multicol}
+
+\usepackage{float}
+
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\linespread{1.5}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tabularray}
+
+\usepackage{amssymb}% for the \blacktriangleleft symbol
+\usepackage[dvipsnames]{xcolor}
+
+\NewDocumentCommand{\Other}{ O{SkyBlue} m }{%
+    \item[\color{#1} #2]%
+}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=10cm]{concordia_comp.png}\\
+\vspace{2cm}
+{\fontsize{20}{10}\selectfont  SOEN 6841 - Software Project Management}\\ 
+\vspace{1cm}
+
+{\fontsize{14}{8}\selectfont 
+TOPIC ANALYSIS AND SYNTHESIS }\\ 
+\vspace{1cm}
+{\fontsize{20}{10}\selectfont \textbf{
+Topic :  Should You 
+Under-Promise, 
+or Over-Deliver }}\\ 
+\vspace{1cm}
+
+
+{\fontsize{17}{10}\selectfont Date: November 30, 2023} \\
+\vspace{1cm}
+{\fontsize{17}{10}\selectfont Submitted by: Ameer Sohail Mohammed} \\
+\vspace{1cm}
+{\fontsize{17}{10}\selectfont Submitted to: Prof. Pankaj Kamthan} \\
+\vspace{1cm}
+{\fontsize{20}{10}\selectfont 
+\begin{center}
+				\textbf{GitHub Repository:} \href{https://github.com/AmeerSohai312/SOEN-6841}{CLICK HERE}.
+
+			\end{center}
+\vspace{1cm} 
+}
+\end{center}
+
+\end{titlepage}
+
+\pagebreak
+
+\newpage
+
+\section{Abstract}
+
+This report delves into the strategic dilemma faced by software project managers: whether to "Under-Promise and Over-Deliver" or adhere strictly to the initial commitments. It examines the challenges encountered by both new and experienced project managers in navigating the delicate balance between stakeholder expectations and project delivery.
+
+For new project managers, the allure of pleasing business stakeholders often results in the continual addition of features, even as the project's capacity to deliver diminishes. This tendency creates a cascade of challenges, with project managers reluctantly cutting features as the project end date looms, leading to potential dissatisfaction and post-release repercussions from once-content stakeholders.
+
+In contrast, experienced project managers employ a proactive and disciplined approach from day one. They resist scope changes and categorizations such as "High–Medium–Low," emphasizing a prioritized list based on business value. This strategic stance may initially irk business owners unaccustomed to such rigidity but proves beneficial over time as stakeholders come to understand and accept the limitations inherent in project timelines.
+
+The report underlines the significance of transparent communication and the management of contingency time as a critical resource. Experienced project managers build contingency into their plans, using it judiciously for features that survive rigorous scrutiny. This strategic allocation ensures flexibility for unforeseen changes while maintaining overall project integrity.
+
+The report concludes that a balanced approach, where promises are made realistically, scope is managed effectively, and contingency measures are strategically deployed, leads to successful project delivery. This approach fosters stakeholder satisfaction, team morale, and the preservation of the project manager's professional reputation, culminating in a positive end-of-release scenario for all parties involved.
+\pagebreak
+\tableofcontents
+\newpage
+\section{Introduction} 
+\subsection{Motivation}
+   One of the main driving forces in project management, particularly in software project activities, is the exploration of the dynamic balance between promise and delivery. The need to comprehend the effects of commitment techniques is what motivates this inquiry, which aims to identify the best practises for project success.
+\subsection{Problem Statement}
+   For software project managers, the main difficulty is finding a balance between overdelivering and underpromising. The important question that this study aims to address is how project managers should strike a balance between original commitments and stakeholder satisfaction in order to ensure project success.
+\subsection{Objective}
+The main goal is to examine the effects of overdelivering and underpromising in software project management. The objective is to gather views from seasoned project managers in order to offer helpful advice on controlling project scopes, meeting stakeholder expectations, and producing effective project outcomes. By improving best practises and raising awareness of successful project management techniques, this study seeks to assist teams, stakeholders, and project managers.
+
+\section{Research Questions }
+\begin{enumerate}
+    \item How do project managers navigate the trade-off between under-promising and over-delivering in the context of software project management?
+\item What challenges do new project managers face in managing stakeholder expectations, especially when under pressure to please and avoid pushback?
+\item What strategies do experienced project managers employ to set clear boundaries from project inception and prioritize features based on business value?
+\item  How does the perceived rigidity or flexibility of project management strategies impact project outcomes in software development?
+\item What are the key considerations in contingency planning for software projects, and how do project managers effectively allocate and manage contingency time?
+\item How do stakeholders initially react to prioritization and pushback, and how does their perception evolve over the course of a project?
+\item  What is the impact of balancing initial commitments with flexibility on project success and stakeholder satisfaction?
+\end{enumerate}
+\section{keywords}
+\begin{multicols}{2}
+\begin{itemize}
+ \item  Project Management
+\item Software Development
+\item Commitment Strategies
+\item Under-promising
+\item Over-delivering
+\item Stakeholder Expectations
+\item New Project Managers
+\item Experienced Project Managers
+\item Flexibility in Project Management
+\item Contingency Planning
+\item Scope Management
+\item Prioritization
+\item Stakeholder Perception
+\item Adaptability
+\item Project Success
+\end{itemize}
+\end{multicols}
+
+\section{Criteria for Evaluation}
+Based on careful analysis of the research question and topic, we can create a solid framework using specific criteria for evaluation. These criteria help us assess the project management strategy in under-promising and over-delivering software projects. Each criterion contributes to understanding how effective the project is and how it can be improved in future projects.
+    \begin{enumerate}
+        \item \textbf{Adherence to Initial Commitments:}
+                \begin{itemize}
+                    \item The project will be assessed based on the degree to which the implemented project management strategy aligns with the commitments and expectations established at the initiation of the project.
+                \end{itemize}
+        \item \textbf{Stakeholder Satisfaction:}
+                \begin{itemize}
+                    \item Stakeholder satisfaction will serve as a key metric, measuring how well the project outcomes meet or exceed the expectations of stakeholders.
+                \end{itemize}
+        \item \textbf{Effective Communication:}
+                \begin{itemize}
+                    \item The evaluation will consider the clarity and effectiveness of communication regarding changes in project scope, potential delays, and the rationale behind prioritization decisions.
+                \end{itemize}
+        \item \textbf{Scope Management:}
+                \begin{itemize}
+                    \item The project's ability to manage and control its scope will be examined, with a focus on preventing scope creep and ensuring alignment with project goals.
+                \end{itemize}
+        \item \textbf{Strategic Prioritization :}
+                \begin{itemize}
+                    \item  This criterion assesses the extent to which project features are prioritized based on their business value, evaluating how well this aligns with the overarching goals of the project.
+                \end{itemize}
+        \item \textbf{Adaptability to Changes::}
+                \begin{itemize}
+                    \item The project's flexibility in adapting to unforeseen challenges, changing requirements, and external factors will be evaluated to determine its resilience in the face of uncertainties.
+                \end{itemize}
+        \item \textbf{Contingency Planning Execution:}
+                \begin{itemize}
+                    \item The effectiveness of contingency planning will be scrutinized, examining how well it is executed and the extent to which it successfully mitigates risks and challenges throughout the project lifecycle.
+                \end{itemize}
+        \item \textbf{Balance Between Rigidity and Flexibility:}
+                \begin{itemize}
+                    \item This criterion assesses the balance between sticking to initial commitments and embracing flexibility to adapt to evolving project dynamics, recognizing the importance of both stability and adaptability.
+                \end{itemize}
+
+                
+    \end{enumerate}
+
+\section{Discussions}
+It can be challenging to strike the correct balance in the field of software project management between what is promised and what is actually delivered. Many people believe that you're a hero if you deliver more and a bad manager if you deliver less. Delivering exactly what was promised—neither more nor less—is the ideal objective, nevertheless.
+\subsection{Challenges :}It's a challenging environment for new project managers. Even if the team isn't ready for all the features, they continue to add them since they want to satisfy everyone. They may not finish everything before the project deadline, which forces them to take on the challenging process of feature trimming. Business associates who were previously pleased may become enraged by this and even consider disciplining the project manager.
+\subsection{Experienced Project Manager's - Strategies:}Project managers with experience develop their ability to be firm early on. They resist the addition of new functions and modifications to the schedule. A list based on commercial value is preferred above the widely used "High–Medium–Low" classifications for features. Although company owners may initially find this annoying, they eventually become used to this method of operating.
+\subsection{Contingency Management: }Experienced managers know changes will happen during a project. They plan for this by keeping a backup plan, known as contingency. They manage this backup plan carefully, revealing it only when needed. Only the features that survive the pushback get included.
+\subsection{Acceptance of Prioritization and Closure:}With time, stakeholders accept the prioritization process. What was once annoying becomes accepted as they see the importance of sticking to a list of features. Projects end with stakeholders being thankful for a well-managed project, sometimes even with extra features.
+\section{Approaches for improvement }
+Here are some suggested approaches that provide practical steps to enhance software project management, emphasizing transparency, strategic planning, and collaborative teamwork.
+   \begin{enumerate}
+               \item \textbf{Effective Communication Channels:} 
+               \begin{itemize}
+                    \item  Employ straightforward and transparent communication to manage expectations efficiently.
+                    \item Keep all stakeholders updated on project developments, challenges, and any adjustments. 
+                \end{itemize}
+              \item  \textbf{Structured Change Control:}
+              \begin{itemize}
+                    \item Establish clear, structured processes for handling changes to the project's scope.
+                    \item Evaluate proposed changes systematically to minimize disruptions and maintain project timelines. 
+                \end{itemize}
+
+            \item  \textbf{Periodic Risk Evaluations:}
+              \begin{itemize}
+                    \item Conduct regular assessments to identify potential risks and challenges.
+                    \item Develop proactive strategies to address and mitigate identified risks as part of ongoing project management.
+                \end{itemize}
+
+                        \item  \textbf{Strategic Contingency Planning:}
+              \begin{itemize}
+                    \item Plan for uncertainties by strategically managing contingency time.
+                    \item Deploy contingency resources judiciously, reserving them for features that withstand project scrutiny.
+                \end{itemize}
+
+                  \item  \textbf{Prioritizing Key Features:}
+              \begin{itemize}
+                    \item Identify and prioritize critical features based on their impact on the project's goals.
+                    \item Ensure a focus on delivering high-value components before addressing less crucial ones.
+                \end{itemize}
+
+            \item  \textbf{Stakeholder Education:}
+              \begin{itemize}
+                    \item Educate stakeholders on the significance of prioritization and project adherence.
+                    \item Provide insights into how following project plans and priorities contributes to overall project success.
+                \end{itemize}
+                
+    \end{enumerate}
+\section{Conclusion }
+In the world of managing software projects, success comes from finding the right balance between keeping promises and being adaptable. By delivering exactly what was pledged, planning ahead smartly, and handling uncertainties well, project managers ensure not just the achievement of project goals but also keep stakeholders happy. This not only protects a project manager's professional reputation but also makes them a trusted guide for project success in a constantly changing environment.
+\newpage
+\begin{thebibliography}
+
+\begin{enumerate}
+
+    \item \footnotesize\url{https://www.sciencedirect.com/science/article/pii/S0164121208000897?casa_token=dwS1QRLxjvgAAAAA:_EOw6Xb_9bz7B8YyW031iry66QaYmmDA-t4_NsmhKYuBVJZL2N73SFPegocp2NiGgHocznrMjK8}
+    
+    \item \footnotesize\url{https://www.sciencedirect.com/science/article/pii/S0263786312001780?casa_token=A2zeh-L6h4EAAAAA:klWWgAGNEAI1nE1ky1Aa3cSjiolc9attIu9uN-e__oYYOEQgqj4M_vphXT8N_Fd5r47b2n-jgIc}
+
+    \item \footnotesize\url{https://ieeexplore.ieee.org/abstract/document/7930315}
+    
+    \item \footnotesize\url{https://books.google.ca/books?hl=en&lr=&id=aIrVEAAAQBAJ&oi=fnd&pg=PT12&dq=effective+communication+in+software+project+management&ots=7WQ5Yfgki_&sig=TvgCo6cOUT-VX8_zO-3qIEcGf4g#v=onepage&q=effective%20communication%20in%20software%20project%20management&f=false}
+    
+    \item \footnotesize\url{https://dl.acm.org/doi/abs/10.1145/2372251.2372300?casa_token=hYx4kb5svx8AAAAA:MjPbTdVMEQE-PqiLlG7WuqoJnub_ctX8bxXchF5vmkKViv54q_Gjfln-IhExNRGEaCO_Hh0vjM9sMA}
+    
+    \item \footnotesize\url{https://scholar.google.ca/scholar_url?url=https://repository.tudelft.nl/islandora/object/uuid:41369284-f0ea-4057-adf3-26826893cf85/datastream/OBJ1/download&hl=en&sa=X&ei=DcJnZcWCLZHOmgHL6baYCg&scisig=AFWwaeaQTJBi9TtxvE2NV5UbshrQ&oi=scholarr}
+    
+    \item \footnotesize\url{https://www.pmi.org/learning/library/effective-communication-better-project-management-6480}
+    
+    \item \footnotesize\url{https://ordergroup.co/en-ca/blog/why-is-flexibility-such-a-valuable-trait-in-software-development/#:~:text=Flexibility%20in%20software%20engineering%20is,the%20course%20of%20the%20process.}
+    
+    \item \footnotesize\url{https://news.wpcarey.asu.edu/20060215-adaptability-essential-ingredient-successful-project-management}
+    
+    \item \footnotesize\url{https://www.wrike.com/project-management-guide/faq/what-is-contingency-plan-in-project-management/}
+    
+    \item ChatGpt 
+    
+    \item QuilBot
+
+\end{enumerate}
+
+
+
+
+
+\end{thebibliography}{}
+
+
+
+
+
+\end{document}
